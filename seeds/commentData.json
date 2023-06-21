@@ -1,0 +1,17 @@
+[
+    {
+      "message": "Cool!",
+      "user_id": 1,
+      "blogpost_id": 3
+    },
+    {
+      "message": "Sound awesome!",
+      "user_id": 2,
+      "blogpost_id": 1
+    },
+    {
+      "message": "Interesting.",
+      "user_id": 3,
+      "blogpost_id": 2
+    }
+]
