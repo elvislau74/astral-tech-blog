@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astral Tech Blog</title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                {{#if logged_in}}
+                <button id="logout">logout</button>
+                {{else}}
+                <a href="/login">login</a>
+                {{/if}}
+            </nav>
+            <h1>
+                <a href="/">Astral Tech Blog</a>
+            </h1>
+        </header>
+        <main>
+            {{{ body }}}
+        </main>
+    </div>
+
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
+</html>
