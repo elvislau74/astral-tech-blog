@@ -32,3 +32,16 @@
     align-self: flex-end;
     color: white;
   }
+
+  .blogpost-form {
+    justify-content: center;
+  }
+
+  .welcome-message {
+    text-align: center;
+  }
+
+  .login-and-signup {
+    margin-left: 50px;
+    margin-right: 50px;
+  }

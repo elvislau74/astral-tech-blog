@@ -22,7 +22,8 @@ router.get('/', async (req, res) => {
 
         res.render('homepage', {
             blogposts,
-            logged_in: req.session.logged_in
+            logged_in: req.session.logged_in,
+            username: req.session.username
         });
     } catch (err) {
         console.log(err);
@@ -65,7 +66,8 @@ router.get('/blogpost/:id', async (req, res) => {
   
       res.render('profile', {
         ...user,
-        logged_in: true
+        logged_in: true,
+        username: req.session.username,
       });
     } catch (err) {
       res.status(500).json(err);
