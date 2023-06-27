@@ -10,7 +10,10 @@
 <body>
     <div class = "flex-column justify-space-around">
         <header class = "display-flex justify-space-between align-center flex-row p-2 mb-5 background">
-            <nav class = "display-flex justify-space-between col-md-12 mb-5 mr-5">
+            <h1 class = "mx-auto mb-5">
+                <a href="/">Astral Tech Blog</a>
+            </h1>
+            <nav class = "display-flex justify-space-between col-md-12 mx-auto">
                 <a href="/">Home</a>
                 <a href="/">Dashboard</a>
                 {{#if logged_in}}
@@ -19,11 +22,8 @@
                 <a href="/login">Login</a>
                 {{/if}}
             </nav>
-            <h1 class = "ml-3">
-                <a href="/">Astral Tech Blog</a>
-            </h1>
         </header>
-        <main class = "ml-5 mx-5">
+        <main class = "mx-auto">
             {{{ body }}}
         </main>
     </div>

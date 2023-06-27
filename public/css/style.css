@@ -16,3 +16,18 @@
     color: #065b83;
     text-decoration: underline;
   }
+
+  .blogpost {
+    justify-content: center;
+    border: 1px solid #1a1a1a;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+  }
+
+  .blogpost-title {
+    background-color: brown;
+  }
+
+  .blogpost-title p {
+    align-self: flex-end;
+  }
