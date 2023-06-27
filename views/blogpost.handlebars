@@ -1,0 +1,16 @@
+<div class="text-center blogpost">
+    <div class = "col-md-12 flex-row justify-space-between mb-2 blogpost-title">
+        <h2>
+            {{title}}
+        </h2>
+        <p>Posted by {{user.username}} on {{format_date date_created}}</p>
+    </div>
+    <div class="col-md-12">
+        <p>
+        {{content}}
+        </p>
+    </div>
+    <p>
+        <a href="/comments">Comments!</a>
+    </p>
+</div>
