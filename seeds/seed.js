@@ -29,8 +29,6 @@ const seedDatabase = async () => {
       blogpost_id: createdBlogposts[Math.floor(Math.random() * users.length)].id,
     });
   }
-
-  process.exit(0);
 };
 
-seedDatabase();
+module.exports = seedDatabase;
